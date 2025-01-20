@@ -26,12 +26,13 @@ public class PersonReader {
                     String[] data = line.split(",");
 
                     if(data.length == 5) {
-                        System.out.printf("%-12s %-15s %-15s %-8s %s%n",
+                        String formattedLine = String.format("%-12s %-15s %-15s %-8s %s%n",
                                 data[0].trim(),
                                 data[1].trim(),
                                 data[2].trim(),
                                 data[3].trim(),
                                 data[4].trim());
+                        System.out.println(formattedLine);
                     }
                 }
             }

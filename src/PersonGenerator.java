@@ -13,7 +13,7 @@ public class PersonGenerator {
         System.out.println("Welcome to the person generator!");
 
         while(more) {
-            int id = SafeInput.getInt(scan, "Enter ID number");
+            String id = SafeInput.getNonZeroLenString(scan, "Enter ID number");
             String firstName = SafeInput.getNonZeroLenString(scan, "Enter first name");
             String lastName = SafeInput.getNonZeroLenString(scan, "Enter last name");
             String title = SafeInput.getNonZeroLenString(scan, "Enter the title");
